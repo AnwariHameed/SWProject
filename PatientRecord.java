@@ -7,12 +7,12 @@
  *
  * @author DELL
  */
-public class PatientRecord extends javax.swing.JFrame {
+public class PatientRecords extends javax.swing.JFrame {
 
     /**
      * Creates new form PatientRecord
      */
-    public PatientRecord() {
+    public PatientRecords() {
         initComponents();
     }
 
@@ -40,7 +40,7 @@ public class PatientRecord extends javax.swing.JFrame {
         jLabel1.setText("    Patient Module");
 
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton1.setText("ADMIN PATIENT");
+        jButton1.setText("ADMIT PATIENT");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -73,9 +73,19 @@ public class PatientRecord extends javax.swing.JFrame {
 
         jButton5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton5.setText("BACK");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
 
         jButton6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton6.setText("LOGOUT");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -122,7 +132,7 @@ public class PatientRecord extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 // TODO add your handling code here:
-admitPatient obj = new admitPatient();
+ PatientRecord obj = new PatientRecord();
 obj.setVisible(true);
 dispose();
 
@@ -130,26 +140,42 @@ dispose();
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        viewdetailsPatient obj = new viewdetailsPatient();
-        obj.setVisible(true);
-        dispose();
+ViewdetailsRecords obj = new ViewdetailsRecords();
+obj. setVisible(true);
+dispose();
+
+
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
-        editPatient obj = new editPatient();
-        obj.setVisible(true);
-        dispose();
+
+EditPatient obj = new EditPatient();
+obj.setVisible(true);
+dispose();
     }              
         
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-dischargePatient obj = new dischargePatient();
-obj.setVisible(true);
-dispose();            
+           
+DischargePatient obj = new DischargePatient();
+obj,setVisible(ture);
+dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // TODO add your handling code here:
+Welcome obj = new Welcome();
+obj.setVisible(true);
+dispose();
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+LoginPage obj = new LoginPage();
+obj. setVisible(true);
+dispose();
+    }//GEN-LAST:event_jButton6ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -180,8 +206,7 @@ dispose();
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new PatientRecord().setVisible(true);
+            public void run() 
             }
         });
     }
