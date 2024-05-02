@@ -17,16 +17,16 @@ This is the repository of the Hospital Management System Project. This project a
 ### Doctor Record:
     • Build an interface with multiple options. 
       o Includes – Add Doctors, View Records, Edit Doctors, and Fire Doctors.
-      o	Each option will have its page where the entered records can be kept, changed, and deleted as desired. 
-      o	Test the pages to see if each page functions properly and with any delay. 
+      o Each option will have its page where the entered records can be kept, changed, and deleted as desired. 
+      o Test the pages to see if each page functions properly and with any delay. 
 ### Review:
     • Upon delivery to the Product Owner, changes will be applied as desired by him. 
 ## Sprint Three:
 ### Patient Admin:
     • Build an interface with multiple options.
-      o	Includes – Admit New Patients, Edit Patient Details, Discharge Patients, and View Patient Details.
-      o	Each option will have its page where the entered records can be kept, changed, and deleted as desired. 
-      o	Test the page to see if each page's record-keeping is clean and functioning. 
+      o Includes – Admit New Patients, Edit Patient Details, Discharge Patients, and View Patient Details.
+      o Each option will have its page where the entered records can be kept, changed, and deleted as desired. 
+      o Test the page to see if each page's record-keeping is clean and functioning. 
 ### Review:
     • Final review upon delivery to the Product Owner and getting approval to launch the system.
 ## Conclusion:
