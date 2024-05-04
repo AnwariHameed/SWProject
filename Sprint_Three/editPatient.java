@@ -1,3 +1,4 @@
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -140,7 +141,7 @@ public class editPatient extends javax.swing.JFrame {
         String pname= pn.getText();
         String pdis= pd.getText();
          try{ Class.forName("com.mysql.jdbc.Driver");
-        Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/hms","root","");
+        Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital","root","");
         
         String sql = "update `paitient_record` SET `PatientName`='"+pname+"',`PatientDisease`='"+pdis+"'WHERE id='"+pid+"'";
         PreparedStatement ptstmt = conn.prepareStatement(sql);
@@ -219,15 +220,5 @@ LoginPage obj =new LoginPage();
     private javax.swing.JTextField pi;
     private javax.swing.JTextField pn;
     // End of variables declaration//GEN-END:variables
-
-    private static class LoginPage {
-
-        public LoginPage() {
-        }
-
-        private void setVisible(boolean b) {
-            throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-        }
-    }
 
 }
